@@ -17,9 +17,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        Task_1_printFoundersList();
-
-        
+        Task_1_printFoundersList();       
         
     }
 }
