@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_1.printFoundersListAtWikipedia;
+import real_time_selenium_java_automation_testing_tasks.Interview_Task_2.printProductsusingContains;
 
 public class App {
 
@@ -20,12 +21,21 @@ public class App {
         task_1.printFoundersList();       
     }
 
+    public static void Task_2_printAmazonProductsUsingContains(WebDriver driver){
+
+        printProductsusingContains task_2 = new printProductsusingContains(driver);
+
+        task_2.printAmazonProductsusingContains();
+    }
+
 
     public static void main(String[] args) {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
-        Task_1_printFoundersList(driver);       
+        //Task_1_printFoundersList(driver);     
+        
+        Task_2_printAmazonProductsUsingContains(driver);
     }
 }
