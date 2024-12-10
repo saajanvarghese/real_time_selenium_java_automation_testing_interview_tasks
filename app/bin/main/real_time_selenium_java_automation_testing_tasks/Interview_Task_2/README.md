@@ -1,20 +1,7 @@
 # Selenium Java Automation Interview Tasks
 
-# Description:
-This repository is created to upload Selenium Automation Interview Tasks using Java.
-
-# Interview Task 01: print values from Wikipedia
-# Task Steps
-
-- Go to "https://www.wikipedia.org/".
-
-- Search for "Apple Inc.".
-
-- Print the founders list.
-
 # Interview Task 02: print AmazonProducts using contains
 # Task Steps
-
 - Go to "https://www.amazon.in/".
 
 - Search for iphone in the search Box.
@@ -27,7 +14,7 @@ This repository is created to upload Selenium Automation Interview Tasks using J
 java --version
 ```
 ```
-# git version 2.47.1
+# git version 2.43.0
 git --version
 ```
 ```
