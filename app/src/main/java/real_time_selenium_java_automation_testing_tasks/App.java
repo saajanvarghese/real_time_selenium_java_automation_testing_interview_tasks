@@ -3,13 +3,19 @@
  */
 package real_time_selenium_java_automation_testing_tasks;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_1.printFoundersListAtWikipedia;
 
 public class App {
 
-    public static void Task_1_printFoundersList(){
+    WebDriver driver;
 
-        printFoundersListAtWikipedia task_1 = new printFoundersListAtWikipedia();
+    public static void Task_1_printFoundersList(WebDriver driver){
+
+        printFoundersListAtWikipedia task_1 = new printFoundersListAtWikipedia(driver);
 
         task_1.printFoundersList();       
     }
@@ -17,6 +23,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        Task_1_printFoundersList();       
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+
+        Task_1_printFoundersList(driver);       
     }
 }

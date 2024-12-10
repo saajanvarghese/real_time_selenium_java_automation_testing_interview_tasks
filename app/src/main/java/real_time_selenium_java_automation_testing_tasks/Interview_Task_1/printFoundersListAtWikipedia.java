@@ -15,10 +15,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class printFoundersListAtWikipedia {
 
-    public void printFoundersList(){
+    WebDriver driver;
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver =new ChromeDriver();
+    public printFoundersListAtWikipedia(WebDriver driver){
+        this.driver = driver;
+
+    }
+
+    public void printFoundersList(){
 
         driver.get("https://www.wikipedia.org/");
 
@@ -35,7 +39,7 @@ public class printFoundersListAtWikipedia {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("(//div[@class='plainlist'])[4]//ul//li//a")));
-        
+
         List<WebElement> foundersList = driver.findElements(By.xpath("(//div[@class='plainlist'])[4]//ul//li//a"));
 
         System.out.println("Founders List:");
