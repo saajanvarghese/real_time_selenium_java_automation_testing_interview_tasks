@@ -21,6 +21,14 @@ This repository is created to upload Selenium Automation Interview Tasks using J
 
 - Display count and iPhone products which contains 128GB in the search results page.
 
+# Interview Task 03: print News Headlines
+# Task Steps
+- Go to "https://www.news.google.com/".
+
+- Click on "India" Tab.
+
+- Display First 5 Headlines.
+
 ## Required Software to Install:
 ```
 # java version 21
