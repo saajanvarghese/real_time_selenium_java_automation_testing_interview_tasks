@@ -10,6 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_1.printFoundersListAtWikipedia;
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_2.printProductsusingContains;
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_3.printNewsHeadlines;
+import real_time_selenium_java_automation_testing_tasks.Interview_Task_4.netBanking;
 
 public class App {
 
@@ -35,6 +36,14 @@ public class App {
         task_3.printGoogleHeadlines();
     }
 
+    public static void Task_4_NetBanking(WebDriver driver){
+
+        netBanking task_4 = new netBanking(driver);
+
+        task_4.printKnowMorePoints();
+
+    }
+
 
     public static void main(String[] args) {
 
@@ -45,6 +54,8 @@ public class App {
         
         //Task_2_printAmazonProductsUsingContains(driver);
 
-        Task_3_printNewsHeadlines(driver);
+        //Task_3_printNewsHeadlines(driver);
+
+        Task_4_NetBanking(driver);
     }
 }

@@ -41,8 +41,7 @@ public class printProductsusingContains {
             }
 
             System.out.println("Total Count of the Products = "+count);
-
-            
+  
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
