@@ -29,6 +29,16 @@ This repository is created to upload Selenium Automation Interview Tasks using J
 
 - Display First 5 Headlines.
 
+# Interview Task 03: print NetBanking Details
+# Task Steps
+- Go to "https://www.hdfcbank.com/".
+
+- Mouse Hover on Login Button.
+
+- Click on Know More under NetBanking.
+
+- Display NetBanking Highlights.
+
 ## Required Software to Install:
 ```
 # java version 21
