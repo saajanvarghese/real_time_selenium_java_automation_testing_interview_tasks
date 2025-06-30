@@ -39,6 +39,18 @@ This repository is created to upload Selenium Automation Interview Tasks using J
 
 - Display NetBanking Highlights.
 
+# Interview Task 05: print 6s of Cricket Players
+# Task Steps
+- Go to "https://www.cricbuzz.com/".
+
+- Click on Live Scores.
+
+- Click on Score Card of the First Section.
+
+- Display Match Title.
+
+- Display the list of Cricket Players (Batters) and 6s.
+
 ## Required Software to Install:
 ```
 # java version 21
