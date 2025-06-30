@@ -53,11 +53,11 @@ This repository is created to upload Selenium Automation Interview Tasks using J
 
 ## Required Software to Install:
 ```
-# java version 21
+# java version  17.0.12
 java --version
 ```
 ```
-# git version 2.47.1
+# git version 2.43.0
 git --version
 ```
 ```
@@ -65,7 +65,7 @@ git --version
 gradle --version
 ```
 ```
-# vscode 1.95.3
+# vscode 1.101.2
 code --version
 ```
 ## Required Dependency to run:
