@@ -11,6 +11,7 @@ import real_time_selenium_java_automation_testing_tasks.Interview_Task_1.printFo
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_2.printProductsusingContains;
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_3.printNewsHeadlines;
 import real_time_selenium_java_automation_testing_tasks.Interview_Task_4.netBanking;
+import real_time_selenium_java_automation_testing_tasks.Interview_Task_5.cricket;
 
 public class App {
 
@@ -44,11 +45,22 @@ public class App {
 
     }
 
+    public static void Task_5_CricBuzz_Task(WebDriver driver){
+        cricket task_5 = new cricket(driver);
+
+        task_5.cricbuzz_task();
+    }
+
+
 
     public static void main(String[] args) {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+
+    // Please note, If your willing to execute any task below Please remove the comment and comment all others
+    // For Example, If you are willing to execute Task_1_printFoundersList(driver), Uncomment "Task_1_printFoundersList(driver);" and comment other Tasks
+    // For Example, If you are willing to execute Task_5_CricBuzz_Task(driver), Uncomment "Task_5_CricBuzz_Task(driver)" and comment other Tasks     
 
         //Task_1_printFoundersList(driver);     
         
@@ -56,6 +68,8 @@ public class App {
 
         //Task_3_printNewsHeadlines(driver);
 
-        Task_4_NetBanking(driver);
+        //Task_4_NetBanking(driver);
+
+        Task_5_CricBuzz_Task(driver);
     }
 }
