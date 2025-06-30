@@ -16,11 +16,9 @@ public class printProductsusingContains {
     }
 
     public void printAmazonProductsusingContains(){
-
-        driver.get("https://www.amazon.in/");
-
-
         try {
+            driver.get("https://www.amazon.in/");
+
             WebElement amazonSearchBox = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
             amazonSearchBox.click();
             amazonSearchBox.clear();
@@ -41,6 +39,8 @@ public class printProductsusingContains {
             }
 
             System.out.println("Total Count of the Products = "+count);
+
+            driver.quit();
   
         } catch (Exception e) {
             // TODO: handle exception

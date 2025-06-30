@@ -12,13 +12,12 @@ public class printNewsHeadlines {
 
     public printNewsHeadlines(WebDriver driver){
         this.driver = driver;
-
     }
 
     public void printGoogleHeadlines(){
-        driver.get("https://news.google.com/");
-
         try {
+            driver.get("https://news.google.com/");
+
             WebElement clickIndiaTab = driver.findElement(By.xpath("(//div[@class='EctEBd']//a[@class='brSCsc'])[4]"));
             clickIndiaTab.click();
 
@@ -31,6 +30,8 @@ public class printNewsHeadlines {
 
                 System.out.println("Headline :"+i+ headlines_desc);
             }
+
+            driver.quit();
 
         } catch (Exception e) {
             // TODO: handle exception

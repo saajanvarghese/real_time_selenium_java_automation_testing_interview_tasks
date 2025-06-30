@@ -21,7 +21,7 @@ public class netBanking {
     public void printKnowMorePoints(){
 
         try {
-            driver.get("https://www.hdfcbank.com/");
+        driver.get("https://www.hdfcbank.com/");
 
         WebElement loginbtn_hover = driver.findElement(By.xpath("//button[@class='desktop-login position-find btn btn-primary login-btn hide-in-mobileApp ng-scope']"));
 
@@ -50,6 +50,8 @@ public class netBanking {
         System.out.println("Content: " + entry.getValue());
         System.out.println("----------------------------");
     }
+
+    driver.quit();
             
         } catch (Exception e) {
             // TODO: handle exception

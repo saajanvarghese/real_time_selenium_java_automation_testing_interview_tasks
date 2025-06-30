@@ -17,14 +17,13 @@ public class printFoundersListAtWikipedia {
 
     public printFoundersListAtWikipedia(WebDriver driver){
         this.driver = driver;
-
     }
 
     public void printFoundersList(){
 
-        driver.get("https://www.wikipedia.org/");
-
-        try {            
+        try {       
+        driver.get("https://www.wikipedia.org/");   
+        
         WebElement searchBox = driver.findElement(By.xpath("//input[@id='searchInput']"));
         searchBox.click();
 
